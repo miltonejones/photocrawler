@@ -1,0 +1,15 @@
+{
+  "name": "PhotoCrawler",
+  "version": "2.2993",
+  "description": "update my photolibrary!", 
+  "browser_action": {
+    "default_icon": "icon_16.png",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [ {
+    "js": [ "jquery.min.js", "javlibrary.js" ],
+    "matches": [ "http://www.javlibrary.com/*"]
+  }],
+  "permissions": ["http://*.javlibrary.com/", "activeTab"],
+  "manifest_version": 2
+}
